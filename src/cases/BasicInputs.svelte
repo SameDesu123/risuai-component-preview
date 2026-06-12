@@ -11,29 +11,29 @@
 
 <div class="space-y-5">
   <div class="space-y-2">
-    <label class="block text-sm font-medium text-textcolor2">TextInput / normal</label>
-    <TextInput bind:value={text} placeholder="placeholder 색상 확인" fullwidth />
+    <label for="basic-text-normal" class="block text-sm font-medium text-textcolor2">TextInput / normal</label>
+    <TextInput id="basic-text-normal" bind:value={text} placeholder="placeholder 색상 확인" fullwidth />
   </div>
 
   <div class="grid gap-3 md:grid-cols-2">
     <div class="space-y-2">
-      <label class="block text-sm font-medium text-textcolor2">TextInput / sm</label>
-      <TextInput bind:value={text} size="sm" placeholder="small" fullwidth />
+      <label for="basic-text-sm" class="block text-sm font-medium text-textcolor2">TextInput / sm</label>
+      <TextInput id="basic-text-sm" bind:value={text} size="sm" placeholder="small" fullwidth />
     </div>
     <div class="space-y-2">
-      <label class="block text-sm font-medium text-textcolor2">TextInput / lg</label>
-      <TextInput bind:value={text} size="lg" placeholder="large" fullwidth />
+      <label for="basic-text-lg" class="block text-sm font-medium text-textcolor2">TextInput / lg</label>
+      <TextInput id="basic-text-lg" bind:value={text} size="lg" placeholder="large" fullwidth />
     </div>
   </div>
 
   <div class="grid gap-3 md:grid-cols-2">
     <div class="space-y-2">
-      <label class="block text-sm font-medium text-textcolor2">TextInput / hideText</label>
-      <TextInput bind:value={password} hideText placeholder="password" fullwidth />
+      <label for="basic-text-hidden" class="block text-sm font-medium text-textcolor2">TextInput / hideText</label>
+      <TextInput id="basic-text-hidden" bind:value={password} hideText placeholder="password" fullwidth />
     </div>
     <div class="space-y-2">
-      <label class="block text-sm font-medium text-textcolor2">TextInput / disabled</label>
-      <TextInput bind:value={disabledText} disabled placeholder="disabled" fullwidth />
+      <label for="basic-text-disabled" class="block text-sm font-medium text-textcolor2">TextInput / disabled</label>
+      <TextInput id="basic-text-disabled" bind:value={disabledText} disabled placeholder="disabled" fullwidth />
     </div>
   </div>
 
